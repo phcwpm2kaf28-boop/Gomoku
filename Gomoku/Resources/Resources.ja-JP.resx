@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="LblMode" xml:space="preserve"><value>モード</value></data>
+  <data name="LblDifficulty" xml:space="preserve"><value>難易度</value></data>
+  <data name="LblColor" xml:space="preserve"><value>手番</value></data>
+  <data name="LblUndo" xml:space="preserve"><value>待った</value></data>
+  <data name="LblHint" xml:space="preserve"><value>ヒント</value></data>
+  <data name="LblNewGame" xml:space="preserve"><value>新規ゲーム</value></data>
+  <data name="LblSettings" xml:space="preserve"><value>設定</value></data>
+  <data name="LblOnline" xml:space="preserve"><value>オンライン</value></data>
+  <data name="TipMode" xml:space="preserve"><value>モード：2人対局 / AI対局 / オンライン</value></data>
+  <data name="TipDifficulty" xml:space="preserve"><value>AIの難易度：簡単 / 普通 / 難しい / 上級 / 達人</value></data>
+  <data name="TipColor" xml:space="preserve"><value>黒を持って先攻、または白を持って後攻</value></data>
+  <data name="TipUndo" xml:space="preserve"><value>前の一手を取り消す（U）</value></data>
+  <data name="TipHint" xml:space="preserve"><value>おすすめの一手を表示（H）</value></data>
+  <data name="TipNewGame" xml:space="preserve"><value>新規ゲーム：最初からやり直す（R）</value></data>
+  <data name="TipSettings" xml:space="preserve"><value>テーマ、言語、キー、設定</value></data>
+  <data name="TipOnline" xml:space="preserve"><value>ローカルネットワークでオンライン対局</value></data>
+  <data name="Mode0" xml:space="preserve"><value>2人対局</value></data>
+  <data name="Mode1" xml:space="preserve"><value>AI対局</value></data>
+  <data name="Mode2" xml:space="preserve"><value>オンライン対局</value></data>
+  <data name="ModeLabel0" xml:space="preserve"><value>2人</value></data>
+  <data name="ModeLabel1" xml:space="preserve"><value>AI</value></data>
+  <data name="ModeLabel2" xml:space="preserve"><value>オンライン</value></data>
+  <data name="Diff0" xml:space="preserve"><value>簡単</value></data>
+  <data name="Diff1" xml:space="preserve"><value>普通</value></data>
+  <data name="Diff2" xml:space="preserve"><value>難しい</value></data>
+  <data name="Diff3" xml:space="preserve"><value>上級</value></data>
+  <data name="Diff4" xml:space="preserve"><value>達人</value></data>
+  <data name="Color0" xml:space="preserve"><value>黒を持って先攻</value></data>
+  <data name="Color1" xml:space="preserve"><value>白を持って後攻</value></data>
+  <data name="ColorLabelBlack" xml:space="preserve"><value>黒番</value></data>
+  <data name="ColorLabelWhite" xml:space="preserve"><value>白番</value></data>
+  <data name="ThemeSystem" xml:space="preserve"><value>システム</value></data>
+  <data name="ThemeLight" xml:space="preserve"><value>ライト</value></data>
+  <data name="ThemeDark" xml:space="preserve"><value>ダーク</value></data>
+  <data name="StBlack" xml:space="preserve"><value>黒番</value></data>
+  <data name="StWhite" xml:space="preserve"><value>白番</value></data>
+  <data name="StPlayer" xml:space="preserve"><value>あなた（{0}）</value></data>
+  <data name="StAi" xml:space="preserve"><value>コンピューター（{0}）</value></data>
+  <data name="StOpponent" xml:space="preserve"><value>相手（{0}）</value></data>
+  <data name="StWin" xml:space="preserve"><value>{0} の勝ち！</value></data>
+  <data name="StDraw" xml:space="preserve"><value>引き分け</value></data>
+  <data name="StWaitConn" xml:space="preserve"><value>接続待ち…</value></data>
+  <data name="StAiThink" xml:space="preserve"><value>コンピューター思考中…</value></data>
+  <data name="StYourTurn" xml:space="preserve"><value>あなたの番です</value></data>
+  <data name="StWaitMove" xml:space="preserve"><value>相手の手を待っています…</value></data>
+  <data name="StToMove" xml:space="preserve"><value>{0} の番</value></data>
+  <data name="StTurnN" xml:space="preserve"><value>{0}手目 · {1}</value></data>
+  <data name="Ok" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>キャンセル</value></data>
+  <data name="CNewGame" xml:space="preserve"><value>新しい対局</value></data>
+  <data name="CNewGameMsg" xml:space="preserve"><value>現在の対局はまだ終わっていません。新しい対局を始めますか？</value></data>
+  <data name="NetTitle" xml:space="preserve"><value>オンライン対局</value></data>
+  <data name="NetClose" xml:space="preserve"><value>閉じる</value></data>
+  <data name="NetGuideTitle" xml:space="preserve"><value>オンライン対局の前に</value></data>
+  <data name="NetGuideMsg" xml:space="preserve"><value>両方の端末を同じ Wi-Fi / ネットワークに接続してください。初回起動時にファイアウォールの許可を求める画面で許可してください（TCP 45679 / UDP 45680）。ルーターで「AP分離」が有効な場合は、IPを手動入力して参加してください。</value></data>
+  <data name="NetName" xml:space="preserve"><value>あなたの名前</value></data>
+  <data name="NetHost" xml:space="preserve"><value>ルーム作成</value></data>
+  <data name="NetDiscover" xml:space="preserve"><value>更新</value></data>
+  <data name="NetPick" xml:space="preserve"><value>対戦相手を選択（ダブルクリックで参加）</value></data>
+  <data name="NetJoinIp" xml:space="preserve"><value>IPアドレス（手動で参加）</value></data>
+  <data name="NetJoin" xml:space="preserve"><value>参加</value></data>
+  <data name="NetDisconnect" xml:space="preserve"><value>切断</value></data>
+  <data name="NetNotOnline" xml:space="preserve"><value>オンラインモードではありません：このウィンドウを閉じて、ツールバーで「オンライン対局」を選択してください。</value></data>
+  <data name="NetHosting" xml:space="preserve"><value>ルームを作成しました。相手の参加を待っています…（相手は「更新」で見つけられます。IPを伝えることもできます）</value></data>
+  <data name="NetConnected" xml:space="preserve"><value>{0} に接続しました（ホストが黒番）</value></data>
+  <data name="NetIdle" xml:space="preserve"><value>リストから対戦相手を選ぶか、IPを手動で入力してください。</value></data>
+  <data name="NetCreating" xml:space="preserve"><value>ルームを作成中…</value></data>
+  <data name="NetCreateFail" xml:space="preserve"><value>ルームの作成に失敗しました（ポートが使用中？）。後でもう一度お試しください。</value></data>
+  <data name="NetSearching" xml:space="preserve"><value>近くのルームを検索中…</value></data>
+  <data name="NetNone" xml:space="preserve"><value>ルームが見つかりません：相手が「ルーム作成」を押したか、両端末が同じネットワークにあるか確認してください。</value></data>
+  <data name="NetFound" xml:space="preserve"><value>{0} 人のプレイヤーが見つかりました。ダブルクリックで参加してください。</value></data>
+  <data name="NetNeedIp" xml:space="preserve"><value>まずIPアドレスを入力するか、リストからプレイヤーを選択してください。</value></data>
+  <data name="NetConnecting" xml:space="preserve"><value>{0} に接続中…</value></data>
+  <data name="NetFail" xml:space="preserve"><value>接続に失敗しました：IP、ネットワーク、ファイアウォールを確認してください</value></data>
+  <data name="NetToastConnected" xml:space="preserve"><value>相手に接続しました：{0}</value></data>
+  <data name="NetToastDisconnected" xml:space="preserve"><value>接続を切断しました</value></data>
+  <data name="CUndoReqTitle" xml:space="preserve"><value>待ったの申請</value></data>
+  <data name="CUndoReqMsg" xml:space="preserve"><value>{0} が待ったを申請しています。承諾しますか？</value></data>
+  <data name="NetUndoAccepted" xml:space="preserve"><value>相手が待ったを承諾しました</value></data>
+  <data name="NetUndoDenied" xml:space="preserve"><value>相手が待ったを拒否しました</value></data>
+  <data name="CRestartTitle" xml:space="preserve"><value>再開</value></data>
+  <data name="CRestartMsg" xml:space="preserve"><value>{0} が新しい対局を申請しています。承諾しますか？</value></data>
+  <data name="NetRestartDenied" xml:space="preserve"><value>相手が再開を拒否しました</value></data>
+  <data name="StTitle" xml:space="preserve"><value>設定</value></data>
+  <data name="StDone" xml:space="preserve"><value>完了</value></data>
+  <data name="StAppearance" xml:space="preserve"><value>外観とテーマ</value></data>
+  <data name="StThemeHint" xml:space="preserve"><value>タイトルバー、Mica 素材、盤面の配色がすぐに切り替わります。</value></data>
+  <data name="StPrefs" xml:space="preserve"><value>設定</value></data>
+  <data name="StName" xml:space="preserve"><value>プレイヤー名（相手に表示されます）</value></data>
+  <data name="StHint" xml:space="preserve"><value>ヒント機能を有効にする</value></data>
+  <data name="StHintSub" xml:space="preserve"><value>オフにすると「ヒント」ボタンが使用できなくなります</value></data>
+  <data name="StLang" xml:space="preserve"><value>言語</value></data>
+  <data name="StLangSub" xml:space="preserve"><value>インターフェース言語：すぐに適用され、再起動は不要です。既定ではシステムに従います。</value></data>
+  <data name="StKeys" xml:space="preserve"><value>キーボードショートカット</value></data>
+  <data name="StReset" xml:space="preserve"><value>リセット</value></data>
+  <data name="StCaptureHint" xml:space="preserve"><value>「変更」をクリックしてから新しいキーを押してください（Esc でキャンセル）</value></data>
+  <data name="StAbout" xml:space="preserve"><value>このアプリについて</value></data>
+  <data name="StAboutLine" xml:space="preserve"><value>WinUI 3 / Windows App SDK で構築、Windows 11 のデザイン言語に準拠。</value></data>
+  <data name="StFeatures" xml:space="preserve"><value>2人対局、5段階のAI対局、LANオンライン対局、待った、ヒント、キーカスタマイズ、多言語、ライト/ダークテーマに対応。</value></data>
+  <data name="LangSystem" xml:space="preserve"><value>システム</value></data>
+  <data name="KeyMoveUp" xml:space="preserve"><value>上に移動</value></data>
+  <data name="KeyMoveDown" xml:space="preserve"><value>下に移動</value></data>
+  <data name="KeyMoveLeft" xml:space="preserve"><value>左に移動</value></data>
+  <data name="KeyMoveRight" xml:space="preserve"><value>右に移動</value></data>
+  <data name="KeyPlaceStone" xml:space="preserve"><value>石を置く</value></data>
+  <data name="KeyUndo" xml:space="preserve"><value>待った</value></data>
+  <data name="KeyHint" xml:space="preserve"><value>ヒント</value></data>
+  <data name="KeyNewGame" xml:space="preserve"><value>新しい対局</value></data>
+  <data name="KeyTheme" xml:space="preserve"><value>テーマ切り替え</value></data>
+  <data name="KeySettings" xml:space="preserve"><value>設定を開く</value></data>
+  <data name="StUnbound" xml:space="preserve"><value>（未設定）</value></data>
+  <data name="StModify" xml:space="preserve"><value>変更</value></data>
+  <data name="StCapturing" xml:space="preserve"><value>新しいキーを押してください…（Esc でキャンセル）</value></data>
+  <data name="StCaptureStart" xml:space="preserve"><value>{0} を割り当て中：新しいキーを押してください…</value></data>
+  <data name="StCanceled" xml:space="preserve"><value>キャンセルしました。「変更」をクリックしてから新しいキーを押してください（Esc でキャンセル）</value></data>
+  <data name="StBound" xml:space="preserve"><value>{0} に割り当てました → {1}</value></data>
+  <data name="BoardKeyHint" xml:space="preserve"><value>方向キー / WASD で移動 · Enter / スペースで打つ · U 待った · H ヒント · R 新規 · T テーマ</value></data>
+</root>

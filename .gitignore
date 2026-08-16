@@ -1,0 +1,21 @@
+# 构建产物
+bin/
+obj/
+AppPackages/
+publish/
+*.user
+
+# 签名证书（私钥，切勿提交）
+*.pfx
+
+# 安装包/绿色版（发布到 GitHub Release，不入库）
+release/*.msix
+release/*.zip
+
+# IDE
+.vs/
+.idea/
+*.suo
+
+# 日志
+*.log

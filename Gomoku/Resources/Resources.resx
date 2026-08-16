@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="LblMode" xml:space="preserve"><value>Mode</value></data>
+  <data name="LblDifficulty" xml:space="preserve"><value>Difficulty</value></data>
+  <data name="LblColor" xml:space="preserve"><value>Pieces</value></data>
+  <data name="LblUndo" xml:space="preserve"><value>Undo</value></data>
+  <data name="LblHint" xml:space="preserve"><value>Hint</value></data>
+  <data name="LblNewGame" xml:space="preserve"><value>New Game</value></data>
+  <data name="LblSettings" xml:space="preserve"><value>Settings</value></data>
+  <data name="LblOnline" xml:space="preserve"><value>Online</value></data>
+  <data name="TipMode" xml:space="preserve"><value>Mode: 2-player / vs AI / Online</value></data>
+  <data name="TipDifficulty" xml:space="preserve"><value>AI difficulty: Easy / Normal / Hard / Expert / Master</value></data>
+  <data name="TipColor" xml:space="preserve"><value>Play black first or white second</value></data>
+  <data name="TipUndo" xml:space="preserve"><value>Undo the last move (U)</value></data>
+  <data name="TipHint" xml:space="preserve"><value>Show a suggested move (H)</value></data>
+  <data name="TipNewGame" xml:space="preserve"><value>Start a new game (R)</value></data>
+  <data name="TipSettings" xml:space="preserve"><value>Theme, language, keys and preferences</value></data>
+  <data name="TipOnline" xml:space="preserve"><value>Play online over LAN</value></data>
+  <data name="Mode0" xml:space="preserve"><value>2-Player Mode</value></data>
+  <data name="Mode1" xml:space="preserve"><value>vs AI Mode</value></data>
+  <data name="Mode2" xml:space="preserve"><value>Online Mode</value></data>
+  <data name="ModeLabel0" xml:space="preserve"><value>2P</value></data>
+  <data name="ModeLabel1" xml:space="preserve"><value>AI</value></data>
+  <data name="ModeLabel2" xml:space="preserve"><value>Online</value></data>
+  <data name="Diff0" xml:space="preserve"><value>Easy</value></data>
+  <data name="Diff1" xml:space="preserve"><value>Normal</value></data>
+  <data name="Diff2" xml:space="preserve"><value>Hard</value></data>
+  <data name="Diff3" xml:space="preserve"><value>Expert</value></data>
+  <data name="Diff4" xml:space="preserve"><value>Master</value></data>
+  <data name="Color0" xml:space="preserve"><value>Black first</value></data>
+  <data name="Color1" xml:space="preserve"><value>White second</value></data>
+  <data name="ColorLabelBlack" xml:space="preserve"><value>Black</value></data>
+  <data name="ColorLabelWhite" xml:space="preserve"><value>White</value></data>
+  <data name="ThemeSystem" xml:space="preserve"><value>System</value></data>
+  <data name="ThemeLight" xml:space="preserve"><value>Light</value></data>
+  <data name="ThemeDark" xml:space="preserve"><value>Dark</value></data>
+  <data name="StBlack" xml:space="preserve"><value>Black</value></data>
+  <data name="StWhite" xml:space="preserve"><value>White</value></data>
+  <data name="StPlayer" xml:space="preserve"><value>You ({0})</value></data>
+  <data name="StAi" xml:space="preserve"><value>Computer ({0})</value></data>
+  <data name="StOpponent" xml:space="preserve"><value>Opponent ({0})</value></data>
+  <data name="StWin" xml:space="preserve"><value>{0} wins!</value></data>
+  <data name="StDraw" xml:space="preserve"><value>Draw</value></data>
+  <data name="StWaitConn" xml:space="preserve"><value>Waiting for connection…</value></data>
+  <data name="StAiThink" xml:space="preserve"><value>Computer is thinking…</value></data>
+  <data name="StYourTurn" xml:space="preserve"><value>Your move</value></data>
+  <data name="StWaitMove" xml:space="preserve"><value>Waiting for opponent…</value></data>
+  <data name="StToMove" xml:space="preserve"><value>{0} to move</value></data>
+  <data name="StTurnN" xml:space="preserve"><value>Move {0} · {1}</value></data>
+  <data name="Ok" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="CNewGame" xml:space="preserve"><value>New game</value></data>
+  <data name="CNewGameMsg" xml:space="preserve"><value>The current game is not over. Start a new one?</value></data>
+  <data name="NetTitle" xml:space="preserve"><value>Online Play</value></data>
+  <data name="NetClose" xml:space="preserve"><value>Close</value></data>
+  <data name="NetGuideTitle" xml:space="preserve"><value>Before you play online</value></data>
+  <data name="NetGuideMsg" xml:space="preserve"><value>Both devices must be on the same Wi-Fi / LAN. On first run, allow access in the firewall prompt (TCP 45679 / UDP 45680). If AP isolation is enabled on the router, join manually by IP.</value></data>
+  <data name="NetName" xml:space="preserve"><value>Your name</value></data>
+  <data name="NetHost" xml:space="preserve"><value>Create room</value></data>
+  <data name="NetDiscover" xml:space="preserve"><value>Refresh rooms</value></data>
+  <data name="NetPick" xml:space="preserve"><value>Select an opponent (double-click to join)</value></data>
+  <data name="NetJoinIp" xml:space="preserve"><value>IP address (join manually)</value></data>
+  <data name="NetJoin" xml:space="preserve"><value>Join</value></data>
+  <data name="NetDisconnect" xml:space="preserve"><value>Disconnect</value></data>
+  <data name="NetNotOnline" xml:space="preserve"><value>Not in online mode: close this window and choose "Online Mode" in the toolbar first.</value></data>
+  <data name="NetHosting" xml:space="preserve"><value>Room created, waiting for an opponent… (they can find you with "Refresh rooms", or you can share your IP)</value></data>
+  <data name="NetConnected" xml:space="preserve"><value>Connected to {0} (host plays black)</value></data>
+  <data name="NetIdle" xml:space="preserve"><value>Pick an opponent from the list, or enter their IP manually.</value></data>
+  <data name="NetCreating" xml:space="preserve"><value>Creating room…</value></data>
+  <data name="NetCreateFail" xml:space="preserve"><value>Failed to create the room (port in use?). Try again later.</value></data>
+  <data name="NetSearching" xml:space="preserve"><value>Searching for nearby rooms…</value></data>
+  <data name="NetNone" xml:space="preserve"><value>No rooms found: make sure the host clicked "Create room" and both devices are on the same network.</value></data>
+  <data name="NetFound" xml:space="preserve"><value>Found {0} player(s). Double-click to join.</value></data>
+  <data name="NetNeedIp" xml:space="preserve"><value>Enter an IP address first, or pick a player from the list.</value></data>
+  <data name="NetConnecting" xml:space="preserve"><value>Connecting to {0}…</value></data>
+  <data name="NetFail" xml:space="preserve"><value>Connection failed: check the IP, network and firewall settings</value></data>
+  <data name="NetToastConnected" xml:space="preserve"><value>Connected to opponent: {0}</value></data>
+  <data name="NetToastDisconnected" xml:space="preserve"><value>Disconnected</value></data>
+  <data name="CUndoReqTitle" xml:space="preserve"><value>Undo request</value></data>
+  <data name="CUndoReqMsg" xml:space="preserve"><value>{0} requests an undo. Accept?</value></data>
+  <data name="NetUndoAccepted" xml:space="preserve"><value>Opponent accepted the undo</value></data>
+  <data name="NetUndoDenied" xml:space="preserve"><value>Opponent declined the undo</value></data>
+  <data name="CRestartTitle" xml:space="preserve"><value>Restart</value></data>
+  <data name="CRestartMsg" xml:space="preserve"><value>{0} requests a new game. Accept?</value></data>
+  <data name="NetRestartDenied" xml:space="preserve"><value>Opponent declined the restart</value></data>
+  <data name="StTitle" xml:space="preserve"><value>Settings</value></data>
+  <data name="StDone" xml:space="preserve"><value>Done</value></data>
+  <data name="StAppearance" xml:space="preserve"><value>Appearance &amp; Theme</value></data>
+  <data name="StThemeHint" xml:space="preserve"><value>The title bar, Mica material and board colors update immediately.</value></data>
+  <data name="StPrefs" xml:space="preserve"><value>Preferences</value></data>
+  <data name="StName" xml:space="preserve"><value>Player name (shown to opponents)</value></data>
+  <data name="StHint" xml:space="preserve"><value>Enable hints</value></data>
+  <data name="StHintSub" xml:space="preserve"><value>The hint button is disabled when off</value></data>
+  <data name="StLang" xml:space="preserve"><value>Language</value></data>
+  <data name="StLangSub" xml:space="preserve"><value>Interface language: applies immediately, no restart needed. Defaults to system.</value></data>
+  <data name="StKeys" xml:space="preserve"><value>Keyboard shortcuts</value></data>
+  <data name="StReset" xml:space="preserve"><value>Reset</value></data>
+  <data name="StCaptureHint" xml:space="preserve"><value>Click "Change", then press a new key (Esc to cancel)</value></data>
+  <data name="StAbout" xml:space="preserve"><value>About</value></data>
+  <data name="StAboutLine" xml:space="preserve"><value>Built with WinUI 3 / Windows App SDK, following the Windows 11 design language.</value></data>
+  <data name="StFeatures" xml:space="preserve"><value>Supports 2-player, 5-level AI, LAN play, undo, hints, custom keys, multiple languages and light/dark themes.</value></data>
+  <data name="LangSystem" xml:space="preserve"><value>System</value></data>
+  <data name="KeyMoveUp" xml:space="preserve"><value>Move up</value></data>
+  <data name="KeyMoveDown" xml:space="preserve"><value>Move down</value></data>
+  <data name="KeyMoveLeft" xml:space="preserve"><value>Move left</value></data>
+  <data name="KeyMoveRight" xml:space="preserve"><value>Move right</value></data>
+  <data name="KeyPlaceStone" xml:space="preserve"><value>Place stone</value></data>
+  <data name="KeyUndo" xml:space="preserve"><value>Undo</value></data>
+  <data name="KeyHint" xml:space="preserve"><value>Hint</value></data>
+  <data name="KeyNewGame" xml:space="preserve"><value>New game</value></data>
+  <data name="KeyTheme" xml:space="preserve"><value>Toggle theme</value></data>
+  <data name="KeySettings" xml:space="preserve"><value>Open settings</value></data>
+  <data name="StUnbound" xml:space="preserve"><value>(unbound)</value></data>
+  <data name="StModify" xml:space="preserve"><value>Change</value></data>
+  <data name="StCapturing" xml:space="preserve"><value>Press a new key… (Esc to cancel)</value></data>
+  <data name="StCaptureStart" xml:space="preserve"><value>Binding {0}: press the new key…</value></data>
+  <data name="StCanceled" xml:space="preserve"><value>Canceled. Click "Change" then press a new key (Esc to cancel)</value></data>
+  <data name="StBound" xml:space="preserve"><value>Bound {0} → {1}</value></data>
+  <data name="BoardKeyHint" xml:space="preserve"><value>Arrows / WASD move · Enter / Space place · U undo · H hint · R new game · T theme</value></data>
+</root>

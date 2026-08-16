@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="LblMode" xml:space="preserve"><value>모드</value></data>
+  <data name="LblDifficulty" xml:space="preserve"><value>난이도</value></data>
+  <data name="LblColor" xml:space="preserve"><value>돌</value></data>
+  <data name="LblUndo" xml:space="preserve"><value>무르기</value></data>
+  <data name="LblHint" xml:space="preserve"><value>힌트</value></data>
+  <data name="LblNewGame" xml:space="preserve"><value>새 게임</value></data>
+  <data name="LblSettings" xml:space="preserve"><value>설정</value></data>
+  <data name="LblOnline" xml:space="preserve"><value>온라인</value></data>
+  <data name="TipMode" xml:space="preserve"><value>모드: 2인 대국 / AI 대국 / 온라인</value></data>
+  <data name="TipDifficulty" xml:space="preserve"><value>AI 난이도: 쉬움 / 보통 / 어려움 / 고수 / 달인</value></data>
+  <data name="TipColor" xml:space="preserve"><value>흑 먼저 또는 백 다음</value></data>
+  <data name="TipUndo" xml:space="preserve"><value>마지막 수 되돌리기 (U)</value></data>
+  <data name="TipHint" xml:space="preserve"><value>추천 수 표시 (H)</value></data>
+  <data name="TipNewGame" xml:space="preserve"><value>새 게임: 처음부터 다시 시작 (R)</value></data>
+  <data name="TipSettings" xml:space="preserve"><value>테마, 언어, 키, 기본 설정</value></data>
+  <data name="TipOnline" xml:space="preserve"><value>로컬 네트워크에서 온라인 대국</value></data>
+  <data name="Mode0" xml:space="preserve"><value>2인 대국</value></data>
+  <data name="Mode1" xml:space="preserve"><value>AI 대국</value></data>
+  <data name="Mode2" xml:space="preserve"><value>온라인 대국</value></data>
+  <data name="ModeLabel0" xml:space="preserve"><value>2인</value></data>
+  <data name="ModeLabel1" xml:space="preserve"><value>AI</value></data>
+  <data name="ModeLabel2" xml:space="preserve"><value>온라인</value></data>
+  <data name="Diff0" xml:space="preserve"><value>쉬움</value></data>
+  <data name="Diff1" xml:space="preserve"><value>보통</value></data>
+  <data name="Diff2" xml:space="preserve"><value>어려움</value></data>
+  <data name="Diff3" xml:space="preserve"><value>고수</value></data>
+  <data name="Diff4" xml:space="preserve"><value>달인</value></data>
+  <data name="Color0" xml:space="preserve"><value>흑 먼저</value></data>
+  <data name="Color1" xml:space="preserve"><value>백 다음</value></data>
+  <data name="ColorLabelBlack" xml:space="preserve"><value>흑</value></data>
+  <data name="ColorLabelWhite" xml:space="preserve"><value>백</value></data>
+  <data name="ThemeSystem" xml:space="preserve"><value>시스템</value></data>
+  <data name="ThemeLight" xml:space="preserve"><value>라이트</value></data>
+  <data name="ThemeDark" xml:space="preserve"><value>다크</value></data>
+  <data name="StBlack" xml:space="preserve"><value>흑</value></data>
+  <data name="StWhite" xml:space="preserve"><value>백</value></data>
+  <data name="StPlayer" xml:space="preserve"><value>당신（{0}）</value></data>
+  <data name="StAi" xml:space="preserve"><value>컴퓨터（{0}）</value></data>
+  <data name="StOpponent" xml:space="preserve"><value>상대（{0}）</value></data>
+  <data name="StWin" xml:space="preserve"><value>{0} 승리！</value></data>
+  <data name="StDraw" xml:space="preserve"><value>무승부</value></data>
+  <data name="StWaitConn" xml:space="preserve"><value>연결 대기 중…</value></data>
+  <data name="StAiThink" xml:space="preserve"><value>컴퓨터가 생각 중…</value></data>
+  <data name="StYourTurn" xml:space="preserve"><value>당신 차례</value></data>
+  <data name="StWaitMove" xml:space="preserve"><value>상대의 수를 기다리는 중…</value></data>
+  <data name="StToMove" xml:space="preserve"><value>{0} 차례</value></data>
+  <data name="StTurnN" xml:space="preserve"><value>{0}수 · {1}</value></data>
+  <data name="Ok" xml:space="preserve"><value>확인</value></data>
+  <data name="Cancel" xml:space="preserve"><value>취소</value></data>
+  <data name="CNewGame" xml:space="preserve"><value>새 게임</value></data>
+  <data name="CNewGameMsg" xml:space="preserve"><value>현재 대국이 끝나지 않았습니다. 새로 시작할까요?</value></data>
+  <data name="NetTitle" xml:space="preserve"><value>온라인 대국</value></data>
+  <data name="NetClose" xml:space="preserve"><value>닫기</value></data>
+  <data name="NetGuideTitle" xml:space="preserve"><value>온라인 대국 전에</value></data>
+  <data name="NetGuideMsg" xml:space="preserve"><value>두 기기가 같은 Wi-Fi / 네트워크에 연결되어 있어야 합니다. 첫 실행 시 방화벽 팝업에서 허용해 주세요 (TCP 45679 / UDP 45680). 라우터에 AP 격리가 켜져 있으면 IP로 수동 참가하세요.</value></data>
+  <data name="NetName" xml:space="preserve"><value>당신의 이름</value></data>
+  <data name="NetHost" xml:space="preserve"><value>방 만들기</value></data>
+  <data name="NetDiscover" xml:space="preserve"><value>새로고침</value></data>
+  <data name="NetPick" xml:space="preserve"><value>상대 선택 (더블 클릭으로 참가)</value></data>
+  <data name="NetJoinIp" xml:space="preserve"><value>IP 주소 (수동 참가)</value></data>
+  <data name="NetJoin" xml:space="preserve"><value>참가</value></data>
+  <data name="NetDisconnect" xml:space="preserve"><value>연결 끊기</value></data>
+  <data name="NetNotOnline" xml:space="preserve"><value>온라인 모드가 아닙니다: 이 창을 닫고 도구 모음에서 «온라인 대국»을 선택하세요.</value></data>
+  <data name="NetHosting" xml:space="preserve"><value>방을 만들었습니다. 상대를 기다리는 중… (상대는 «새로고침»으로 찾을 수 있습니다)</value></data>
+  <data name="NetConnected" xml:space="preserve"><value>{0} 연결됨 (호스트가 흑)</value></data>
+  <data name="NetIdle" xml:space="preserve"><value>목록에서 상대를 선택하거나 IP를 직접 입력하세요.</value></data>
+  <data name="NetCreating" xml:space="preserve"><value>방 만드는 중…</value></data>
+  <data name="NetCreateFail" xml:space="preserve"><value>방을 만들지 못했습니다 (포트 사용 중?). 나중에 다시 시도하세요.</value></data>
+  <data name="NetSearching" xml:space="preserve"><value>가까운 방을 검색하는 중…</value></data>
+  <data name="NetNone" xml:space="preserve"><value>방을 찾지 못했습니다: 상대가 «방 만들기»를 눌렀는지, 두 기기가 같은 네트워크인지 확인하세요.</value></data>
+  <data name="NetFound" xml:space="preserve"><value>플레이어 {0}명을 찾았습니다. 더블 클릭으로 참가하세요.</value></data>
+  <data name="NetNeedIp" xml:space="preserve"><value>먼저 IP를 입력하거나 목록에서 플레이어를 선택하세요.</value></data>
+  <data name="NetConnecting" xml:space="preserve"><value>{0}에 연결 중…</value></data>
+  <data name="NetFail" xml:space="preserve"><value>연결 실패: IP, 네트워크, 방화벽을 확인하세요</value></data>
+  <data name="NetToastConnected" xml:space="preserve"><value>상대와 연결됨: {0}</value></data>
+  <data name="NetToastDisconnected" xml:space="preserve"><value>연결이 끊겼습니다</value></data>
+  <data name="CUndoReqTitle" xml:space="preserve"><value>무르기 요청</value></data>
+  <data name="CUndoReqMsg" xml:space="preserve"><value>{0}님이 무르기를 요청했습니다. 수락할까요?</value></data>
+  <data name="NetUndoAccepted" xml:space="preserve"><value>상대가 무르기를 수락했습니다</value></data>
+  <data name="NetUndoDenied" xml:space="preserve"><value>상대가 무르기를 거절했습니다</value></data>
+  <data name="CRestartTitle" xml:space="preserve"><value>다시 시작</value></data>
+  <data name="CRestartMsg" xml:space="preserve"><value>{0}님이 새 게임을 요청했습니다. 수락할까요?</value></data>
+  <data name="NetRestartDenied" xml:space="preserve"><value>상대가 다시 시작을 거절했습니다</value></data>
+  <data name="StTitle" xml:space="preserve"><value>설정</value></data>
+  <data name="StDone" xml:space="preserve"><value>완료</value></data>
+  <data name="StAppearance" xml:space="preserve"><value>모양 및 테마</value></data>
+  <data name="StThemeHint" xml:space="preserve"><value>제목 표시줄, Mica 재질, 바둑판 색상이 즉시 바뀝니다.</value></data>
+  <data name="StPrefs" xml:space="preserve"><value>기본 설정</value></data>
+  <data name="StName" xml:space="preserve"><value>플레이어 이름 (상대에게 표시됨)</value></data>
+  <data name="StHint" xml:space="preserve"><value>힌트 기능 사용</value></data>
+  <data name="StHintSub" xml:space="preserve"><value>끄면 «힌트» 버튼을 사용할 수 없습니다</value></data>
+  <data name="StLang" xml:space="preserve"><value>언어</value></data>
+  <data name="StLangSub" xml:space="preserve"><value>인터페이스 언어: 즉시 적용되며 다시 시작할 필요가 없습니다. 기본은 시스템을 따릅니다.</value></data>
+  <data name="StKeys" xml:space="preserve"><value>키보드 단축키</value></data>
+  <data name="StReset" xml:space="preserve"><value>초기화</value></data>
+  <data name="StCaptureHint" xml:space="preserve"><value>«변경»을 클릭한 다음 새 키를 누르세요 (Esc 취소)</value></data>
+  <data name="StAbout" xml:space="preserve"><value>정보</value></data>
+  <data name="StAboutLine" xml:space="preserve"><value>WinUI 3 / Windows App SDK로 제작, Windows 11 디자인 언어 준수.</value></data>
+  <data name="StFeatures" xml:space="preserve"><value>2인 대국, 5단계 AI, LAN 온라인 대국, 무르기, 힌트, 키 사용자 지정, 다국어, 라이트/다크 테마 지원.</value></data>
+  <data name="LangSystem" xml:space="preserve"><value>시스템</value></data>
+  <data name="KeyMoveUp" xml:space="preserve"><value>위로 이동</value></data>
+  <data name="KeyMoveDown" xml:space="preserve"><value>아래로 이동</value></data>
+  <data name="KeyMoveLeft" xml:space="preserve"><value>왼쪽으로 이동</value></data>
+  <data name="KeyMoveRight" xml:space="preserve"><value>오른쪽으로 이동</value></data>
+  <data name="KeyPlaceStone" xml:space="preserve"><value>돌 놓기</value></data>
+  <data name="KeyUndo" xml:space="preserve"><value>무르기</value></data>
+  <data name="KeyHint" xml:space="preserve"><value>힌트</value></data>
+  <data name="KeyNewGame" xml:space="preserve"><value>새 게임</value></data>
+  <data name="KeyTheme" xml:space="preserve"><value>테마 전환</value></data>
+  <data name="KeySettings" xml:space="preserve"><value>설정 열기</value></data>
+  <data name="StUnbound" xml:space="preserve"><value>(미지정)</value></data>
+  <data name="StModify" xml:space="preserve"><value>변경</value></data>
+  <data name="StCapturing" xml:space="preserve"><value>새 키를 누르세요… (Esc 취소)</value></data>
+  <data name="StCaptureStart" xml:space="preserve"><value>{0} 지정 중: 새 키를 누르세요…</value></data>
+  <data name="StCanceled" xml:space="preserve"><value>취소했습니다. «변경»을 클릭한 다음 새 키를 누르세요 (Esc 취소)</value></data>
+  <data name="StBound" xml:space="preserve"><value>{0} 지정됨 → {1}</value></data>
+  <data name="BoardKeyHint" xml:space="preserve"><value>방향키 / WASD 이동 · Enter / 스페이스 놓기 · U 무르기 · H 힌트 · R 새 게임 · T 테마</value></data>
+</root>

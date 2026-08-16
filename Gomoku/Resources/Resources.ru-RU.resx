@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="LblMode" xml:space="preserve"><value>Режим</value></data>
+  <data name="LblDifficulty" xml:space="preserve"><value>Сложность</value></data>
+  <data name="LblColor" xml:space="preserve"><value>Камни</value></data>
+  <data name="LblUndo" xml:space="preserve"><value>Отмена</value></data>
+  <data name="LblHint" xml:space="preserve"><value>Подсказка</value></data>
+  <data name="LblNewGame" xml:space="preserve"><value>Новая игра</value></data>
+  <data name="LblSettings" xml:space="preserve"><value>Настройки</value></data>
+  <data name="LblOnline" xml:space="preserve"><value>Онлайн</value></data>
+  <data name="TipMode" xml:space="preserve"><value>Режим: 2 игрока / против ИИ / онлайн</value></data>
+  <data name="TipDifficulty" xml:space="preserve"><value>Сложность ИИ: лёгкий / обычный / сложный / эксперт / мастер</value></data>
+  <data name="TipColor" xml:space="preserve"><value>Играть чёрными или белыми</value></data>
+  <data name="TipUndo" xml:space="preserve"><value>Отменить последний ход (U)</value></data>
+  <data name="TipHint" xml:space="preserve"><value>Показать подсказку (H)</value></data>
+  <data name="TipNewGame" xml:space="preserve"><value>Новая игра: начать заново (R)</value></data>
+  <data name="TipSettings" xml:space="preserve"><value>Тема, язык, клавиши и настройки</value></data>
+  <data name="TipOnline" xml:space="preserve"><value>Играть онлайн по локальной сети</value></data>
+  <data name="Mode0" xml:space="preserve"><value>Режим 2 игроков</value></data>
+  <data name="Mode1" xml:space="preserve"><value>Против ИИ</value></data>
+  <data name="Mode2" xml:space="preserve"><value>Онлайн-режим</value></data>
+  <data name="ModeLabel0" xml:space="preserve"><value>2ИГ</value></data>
+  <data name="ModeLabel1" xml:space="preserve"><value>ИИ</value></data>
+  <data name="ModeLabel2" xml:space="preserve"><value>Онлайн</value></data>
+  <data name="Diff0" xml:space="preserve"><value>Лёгкий</value></data>
+  <data name="Diff1" xml:space="preserve"><value>Обычный</value></data>
+  <data name="Diff2" xml:space="preserve"><value>Сложный</value></data>
+  <data name="Diff3" xml:space="preserve"><value>Эксперт</value></data>
+  <data name="Diff4" xml:space="preserve"><value>Мастер</value></data>
+  <data name="Color0" xml:space="preserve"><value>Чёрные первыми</value></data>
+  <data name="Color1" xml:space="preserve"><value>Белые вторыми</value></data>
+  <data name="ColorLabelBlack" xml:space="preserve"><value>Чёрные</value></data>
+  <data name="ColorLabelWhite" xml:space="preserve"><value>Белые</value></data>
+  <data name="ThemeSystem" xml:space="preserve"><value>Системная</value></data>
+  <data name="ThemeLight" xml:space="preserve"><value>Светлая</value></data>
+  <data name="ThemeDark" xml:space="preserve"><value>Тёмная</value></data>
+  <data name="StBlack" xml:space="preserve"><value>Чёрные</value></data>
+  <data name="StWhite" xml:space="preserve"><value>Белые</value></data>
+  <data name="StPlayer" xml:space="preserve"><value>Вы ({0})</value></data>
+  <data name="StAi" xml:space="preserve"><value>Компьютер ({0})</value></data>
+  <data name="StOpponent" xml:space="preserve"><value>Соперник ({0})</value></data>
+  <data name="StWin" xml:space="preserve"><value>{0} побеждает!</value></data>
+  <data name="StDraw" xml:space="preserve"><value>Ничья</value></data>
+  <data name="StWaitConn" xml:space="preserve"><value>Ожидание подключения…</value></data>
+  <data name="StAiThink" xml:space="preserve"><value>Компьютер думает…</value></data>
+  <data name="StYourTurn" xml:space="preserve"><value>Ваш ход</value></data>
+  <data name="StWaitMove" xml:space="preserve"><value>Ожидание хода соперника…</value></data>
+  <data name="StToMove" xml:space="preserve"><value>Ходит {0}</value></data>
+  <data name="StTurnN" xml:space="preserve"><value>Ход {0} · {1}</value></data>
+  <data name="Ok" xml:space="preserve"><value>ОК</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Отмена</value></data>
+  <data name="CNewGame" xml:space="preserve"><value>Новая игра</value></data>
+  <data name="CNewGameMsg" xml:space="preserve"><value>Текущая партия не окончена. Начать новую?</value></data>
+  <data name="NetTitle" xml:space="preserve"><value>Игра онлайн</value></data>
+  <data name="NetClose" xml:space="preserve"><value>Закрыть</value></data>
+  <data name="NetGuideTitle" xml:space="preserve"><value>Перед игрой онлайн</value></data>
+  <data name="NetGuideMsg" xml:space="preserve"><value>Оба устройства должны быть в одной Wi-Fi / локальной сети. При первом запуске разрешите доступ в окне брандмауэра (TCP 45679 / UDP 45680). Если на роутере включена изоляция AP, подключитесь вручную по IP.</value></data>
+  <data name="NetName" xml:space="preserve"><value>Ваше имя</value></data>
+  <data name="NetHost" xml:space="preserve"><value>Создать комнату</value></data>
+  <data name="NetDiscover" xml:space="preserve"><value>Обновить</value></data>
+  <data name="NetPick" xml:space="preserve"><value>Выберите соперника (двойной щелчок для подключения)</value></data>
+  <data name="NetJoinIp" xml:space="preserve"><value>IP-адрес (подключиться вручную)</value></data>
+  <data name="NetJoin" xml:space="preserve"><value>Подключиться</value></data>
+  <data name="NetDisconnect" xml:space="preserve"><value>Отключиться</value></data>
+  <data name="NetNotOnline" xml:space="preserve"><value>Вы не в онлайн-режиме: закройте это окно и выберите «Онлайн-режим» на панели инструментов.</value></data>
+  <data name="NetHosting" xml:space="preserve"><value>Комната создана, ждём соперника… (он найдёт вас через «Обновить», или сообщите ему свой IP)</value></data>
+  <data name="NetConnected" xml:space="preserve"><value>Подключено к {0} (хост играет чёрными)</value></data>
+  <data name="NetIdle" xml:space="preserve"><value>Выберите соперника из списка или введите его IP вручную.</value></data>
+  <data name="NetCreating" xml:space="preserve"><value>Создание комнаты…</value></data>
+  <data name="NetCreateFail" xml:space="preserve"><value>Не удалось создать комнату (порт занят?). Повторите позже.</value></data>
+  <data name="NetSearching" xml:space="preserve"><value>Поиск комнат поблизости…</value></data>
+  <data name="NetNone" xml:space="preserve"><value>Комнаты не найдены: убедитесь, что хост нажал «Создать комнату» и оба устройства в одной сети.</value></data>
+  <data name="NetFound" xml:space="preserve"><value>Найдено игроков: {0}. Двойной щелчок для подключения.</value></data>
+  <data name="NetNeedIp" xml:space="preserve"><value>Сначала введите IP-адрес или выберите игрока из списка.</value></data>
+  <data name="NetConnecting" xml:space="preserve"><value>Подключение к {0}…</value></data>
+  <data name="NetFail" xml:space="preserve"><value>Ошибка подключения: проверьте IP, сеть и брандмауэр</value></data>
+  <data name="NetToastConnected" xml:space="preserve"><value>Подключено к сопернику: {0}</value></data>
+  <data name="NetToastDisconnected" xml:space="preserve"><value>Соединение разорвано</value></data>
+  <data name="CUndoReqTitle" xml:space="preserve"><value>Запрос отмены хода</value></data>
+  <data name="CUndoReqMsg" xml:space="preserve"><value>{0} запрашивает отмену хода. Принять?</value></data>
+  <data name="NetUndoAccepted" xml:space="preserve"><value>Соперник принял отмену</value></data>
+  <data name="NetUndoDenied" xml:space="preserve"><value>Соперник отклонил отмену</value></data>
+  <data name="CRestartTitle" xml:space="preserve"><value>Перезапуск</value></data>
+  <data name="CRestartMsg" xml:space="preserve"><value>{0} запрашивает новую партию. Принять?</value></data>
+  <data name="NetRestartDenied" xml:space="preserve"><value>Соперник отклонил перезапуск</value></data>
+  <data name="StTitle" xml:space="preserve"><value>Настройки</value></data>
+  <data name="StDone" xml:space="preserve"><value>Готово</value></data>
+  <data name="StAppearance" xml:space="preserve"><value>Оформление и тема</value></data>
+  <data name="StThemeHint" xml:space="preserve"><value>Заголовок окна, материал Mica и цвета доски обновятся сразу.</value></data>
+  <data name="StPrefs" xml:space="preserve"><value>Настройки</value></data>
+  <data name="StName" xml:space="preserve"><value>Имя игрока (видно сопернику)</value></data>
+  <data name="StHint" xml:space="preserve"><value>Включить подсказки</value></data>
+  <data name="StHintSub" xml:space="preserve"><value>Кнопка «Подсказка» недоступна, если выключено</value></data>
+  <data name="StLang" xml:space="preserve"><value>Язык</value></data>
+  <data name="StLangSub" xml:space="preserve"><value>Язык интерфейса: применяется сразу, перезапуск не нужен. По умолчанию — системный.</value></data>
+  <data name="StKeys" xml:space="preserve"><value>Сочетания клавиш</value></data>
+  <data name="StReset" xml:space="preserve"><value>Сброс</value></data>
+  <data name="StCaptureHint" xml:space="preserve"><value>Нажмите «Изменить», затем новую клавишу (Esc — отмена)</value></data>
+  <data name="StAbout" xml:space="preserve"><value>О программе</value></data>
+  <data name="StAboutLine" xml:space="preserve"><value>Создано на WinUI 3 / Windows App SDK, по дизайн-языку Windows 11.</value></data>
+  <data name="StFeatures" xml:space="preserve"><value>Поддержка 2 игроков, ИИ с 5 уровнями, онлайн по ЛВС, отмены, подсказки, настройки клавиш, несколько языков и светлая/тёмная темы.</value></data>
+  <data name="LangSystem" xml:space="preserve"><value>Системная</value></data>
+  <data name="KeyMoveUp" xml:space="preserve"><value>Вверх</value></data>
+  <data name="KeyMoveDown" xml:space="preserve"><value>Вниз</value></data>
+  <data name="KeyMoveLeft" xml:space="preserve"><value>Влево</value></data>
+  <data name="KeyMoveRight" xml:space="preserve"><value>Вправо</value></data>
+  <data name="KeyPlaceStone" xml:space="preserve"><value>Поставить камень</value></data>
+  <data name="KeyUndo" xml:space="preserve"><value>Отмена хода</value></data>
+  <data name="KeyHint" xml:space="preserve"><value>Подсказка</value></data>
+  <data name="KeyNewGame" xml:space="preserve"><value>Новая игра</value></data>
+  <data name="KeyTheme" xml:space="preserve"><value>Сменить тему</value></data>
+  <data name="KeySettings" xml:space="preserve"><value>Открыть настройки</value></data>
+  <data name="StUnbound" xml:space="preserve"><value>(не назначено)</value></data>
+  <data name="StModify" xml:space="preserve"><value>Изменить</value></data>
+  <data name="StCapturing" xml:space="preserve"><value>Нажмите новую клавишу… (Esc — отмена)</value></data>
+  <data name="StCaptureStart" xml:space="preserve"><value>Назначение {0}: нажмите новую клавишу…</value></data>
+  <data name="StCanceled" xml:space="preserve"><value>Отменено. Нажмите «Изменить», затем новую клавишу (Esc — отмена)</value></data>
+  <data name="StBound" xml:space="preserve"><value>Назначено {0} → {1}</value></data>
+  <data name="BoardKeyHint" xml:space="preserve"><value>Стрелки / WASD — перемещение · Enter / Пробел — ход · U — отмена · H — подсказка · R — новая игра · T — тема</value></data>
+</root>

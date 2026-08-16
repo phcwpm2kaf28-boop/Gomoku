@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+         IgnorableNamespaces="uap rescap">
+
+  <Identity Name="Gomoku.Game" Publisher="CN=Gomoku" Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>GOMOKU</DisplayName>
+    <PublisherDisplayName>Gomoku</PublisherDisplayName>
+    <Logo>Assets\Icon.png</Logo>
+    <Description>GOMOKU: a WinUI 3 Gomoku game with AI, 2-player and LAN online play</Description>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26200.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="zh-CN" />
+  </Resources>
+
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
+      <uap:VisualElements DisplayName="GOMOKU"
+                          Description="A WinUI 3 Gomoku game"
+                          Square150x150Logo="Assets\Icon.png"
+                          Square44x44Logo="Assets\Icon.png"
+                          BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Icon.png" Square71x71Logo="Assets\Icon.png" Square310x310Logo="Assets\Icon.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#14408F" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+    <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+  </Capabilities>
+</Package>

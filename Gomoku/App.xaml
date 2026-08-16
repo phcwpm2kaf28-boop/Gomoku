@@ -1,0 +1,37 @@
+<Application
+    x:Class="Gomoku.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="BoardBackgroundBrush" Color="#F0DFBC" />
+                    <SolidColorBrush x:Key="BoardLineBrush" Color="#7E5F2E" />
+                    <SolidColorBrush x:Key="BoardStarBrush" Color="#5F451F" />
+                    <SolidColorBrush x:Key="BoardBorderBrush" Color="#C7A267" />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="BoardBackgroundBrush" Color="#352B1C" />
+                    <SolidColorBrush x:Key="BoardLineBrush" Color="#7D5F33" />
+                    <SolidColorBrush x:Key="BoardStarBrush" Color="#A07F4A" />
+                    <SolidColorBrush x:Key="BoardBorderBrush" Color="#4B3B22" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <!-- 通用圆角卡片样式 -->
+            <Style x:Key="PanelCardStyle" TargetType="Border">
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+                <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="Padding" Value="14" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

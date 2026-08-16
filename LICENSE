@@ -1,0 +1,30 @@
+MIT License
+
+Copyright (c) 2026 Lawrence
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+附加条款：
+1. 商业使用必须开源：任何商业用途（销售、集成到商业产品或服务等）须将修改后的与本软件有关部分的完整源码开源。
+   Mandatory Open-Sourcing for Commercial Use：All commercial use (sales, integration into commercial products/services, etc.) requires full open-source disclosure of the complete source code for all project-related modifications.
+
+2. 功能免费：本软件及其所有相关功能不得在被引用的软件中就涉及本软件的部分向最终用户收费。
+   Free Functionality Requirement： After referencing this software and its related functionalities, you may not charge end users for any parts related to this software.

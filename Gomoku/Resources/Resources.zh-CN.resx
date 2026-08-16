@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="LblMode" xml:space="preserve"><value>模式</value></data>
+  <data name="LblDifficulty" xml:space="preserve"><value>难度</value></data>
+  <data name="LblColor" xml:space="preserve"><value>执子</value></data>
+  <data name="LblUndo" xml:space="preserve"><value>悔棋</value></data>
+  <data name="LblHint" xml:space="preserve"><value>提示</value></data>
+  <data name="LblNewGame" xml:space="preserve"><value>新开局</value></data>
+  <data name="LblSettings" xml:space="preserve"><value>设置</value></data>
+  <data name="LblOnline" xml:space="preserve"><value>联机</value></data>
+  <data name="TipMode" xml:space="preserve"><value>对弈模式：双人 / 人机 / 联机</value></data>
+  <data name="TipDifficulty" xml:space="preserve"><value>电脑难度：简单 / 普通 / 困难 / 专家 / 大师</value></data>
+  <data name="TipColor" xml:space="preserve"><value>执黑先行 / 执白后行</value></data>
+  <data name="TipUndo" xml:space="preserve"><value>悔棋：撤销上一步（U）</value></data>
+  <data name="TipHint" xml:space="preserve"><value>提示：显示建议落点（H）</value></data>
+  <data name="TipNewGame" xml:space="preserve"><value>新开局：开始新的一局（R）</value></data>
+  <data name="TipSettings" xml:space="preserve"><value>主题 / 语言 / 键位 / 偏好设置</value></data>
+  <data name="TipOnline" xml:space="preserve"><value>局域网联机对弈</value></data>
+  <data name="Mode0" xml:space="preserve"><value>对弈模式</value></data>
+  <data name="Mode1" xml:space="preserve"><value>人机模式</value></data>
+  <data name="Mode2" xml:space="preserve"><value>联机模式</value></data>
+  <data name="ModeLabel0" xml:space="preserve"><value>双人</value></data>
+  <data name="ModeLabel1" xml:space="preserve"><value>人机</value></data>
+  <data name="ModeLabel2" xml:space="preserve"><value>联机</value></data>
+  <data name="Diff0" xml:space="preserve"><value>简单</value></data>
+  <data name="Diff1" xml:space="preserve"><value>普通</value></data>
+  <data name="Diff2" xml:space="preserve"><value>困难</value></data>
+  <data name="Diff3" xml:space="preserve"><value>专家</value></data>
+  <data name="Diff4" xml:space="preserve"><value>大师</value></data>
+  <data name="Color0" xml:space="preserve"><value>执黑先行</value></data>
+  <data name="Color1" xml:space="preserve"><value>执白后行</value></data>
+  <data name="ColorLabelBlack" xml:space="preserve"><value>执黑</value></data>
+  <data name="ColorLabelWhite" xml:space="preserve"><value>执白</value></data>
+  <data name="ThemeSystem" xml:space="preserve"><value>跟随系统</value></data>
+  <data name="ThemeLight" xml:space="preserve"><value>浅色</value></data>
+  <data name="ThemeDark" xml:space="preserve"><value>深色</value></data>
+  <data name="StBlack" xml:space="preserve"><value>黑方</value></data>
+  <data name="StWhite" xml:space="preserve"><value>白方</value></data>
+  <data name="StPlayer" xml:space="preserve"><value>你（{0}）</value></data>
+  <data name="StAi" xml:space="preserve"><value>电脑（{0}）</value></data>
+  <data name="StOpponent" xml:space="preserve"><value>对手（{0}）</value></data>
+  <data name="StWin" xml:space="preserve"><value>{0} 获胜！</value></data>
+  <data name="StDraw" xml:space="preserve"><value>平局</value></data>
+  <data name="StWaitConn" xml:space="preserve"><value>等待连接…</value></data>
+  <data name="StAiThink" xml:space="preserve"><value>电脑思考中…</value></data>
+  <data name="StYourTurn" xml:space="preserve"><value>轮到你落子</value></data>
+  <data name="StWaitMove" xml:space="preserve"><value>等待对方落子…</value></data>
+  <data name="StToMove" xml:space="preserve"><value>{0} 落子</value></data>
+  <data name="StTurnN" xml:space="preserve"><value>第 {0} 手 · {1}</value></data>
+  <data name="Ok" xml:space="preserve"><value>确定</value></data>
+  <data name="Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="CNewGame" xml:space="preserve"><value>新开局</value></data>
+  <data name="CNewGameMsg" xml:space="preserve"><value>当前对局尚未结束，确定重新开始？</value></data>
+  <data name="NetTitle" xml:space="preserve"><value>联机对弈</value></data>
+  <data name="NetClose" xml:space="preserve"><value>关闭</value></data>
+  <data name="NetGuideTitle" xml:space="preserve"><value>联机前请确认</value></data>
+  <data name="NetGuideMsg" xml:space="preserve"><value>两台设备需在同一 WiFi / 局域网；首次运行请在防火墙弹窗中允许访问（TCP 45679 / UDP 45680）。路由器开启「AP 隔离」时请手动输入 IP。</value></data>
+  <data name="NetName" xml:space="preserve"><value>玩家昵称</value></data>
+  <data name="NetHost" xml:space="preserve"><value>创建房间</value></data>
+  <data name="NetDiscover" xml:space="preserve"><value>刷新房间</value></data>
+  <data name="NetPick" xml:space="preserve"><value>选择对方玩家（双击直接加入）</value></data>
+  <data name="NetJoinIp" xml:space="preserve"><value>IP 地址（手动加入）</value></data>
+  <data name="NetJoin" xml:space="preserve"><value>加入</value></data>
+  <data name="NetDisconnect" xml:space="preserve"><value>断开连接</value></data>
+  <data name="NetNotOnline" xml:space="preserve"><value>当前未处于联机对弈模式：请先关闭本窗口，在顶栏选择「联机模式」。</value></data>
+  <data name="NetHosting" xml:space="preserve"><value>房间已创建，等待对手加入…（对方点「刷新房间」即可看到你，也可告知对方你的 IP）</value></data>
+  <data name="NetConnected" xml:space="preserve"><value>已连接对手：{0}（主机执黑先行）</value></data>
+  <data name="NetIdle" xml:space="preserve"><value>从下方列表选择对方玩家，或手动输入 IP 加入。</value></data>
+  <data name="NetCreating" xml:space="preserve"><value>正在创建房间…</value></data>
+  <data name="NetCreateFail" xml:space="preserve"><value>创建房间失败（端口被占用？），请稍后重试。</value></data>
+  <data name="NetSearching" xml:space="preserve"><value>正在搜索附近房间…</value></data>
+  <data name="NetNone" xml:space="preserve"><value>未发现房间：请确认对方已点击「创建房间」，且两台设备在同一网络。</value></data>
+  <data name="NetFound" xml:space="preserve"><value>发现 {0} 个玩家，双击列表项即可加入。</value></data>
+  <data name="NetNeedIp" xml:space="preserve"><value>请先输入对方 IP，或从上方列表选择玩家。</value></data>
+  <data name="NetConnecting" xml:space="preserve"><value>正在连接 {0}…</value></data>
+  <data name="NetFail" xml:space="preserve"><value>连接失败：请检查 IP、网络与防火墙设置</value></data>
+  <data name="NetToastConnected" xml:space="preserve"><value>已连接对手：{0}</value></data>
+  <data name="NetToastDisconnected" xml:space="preserve"><value>已断开连接</value></data>
+  <data name="CUndoReqTitle" xml:space="preserve"><value>悔棋请求</value></data>
+  <data name="CUndoReqMsg" xml:space="preserve"><value>{0} 请求悔棋，是否同意？</value></data>
+  <data name="NetUndoAccepted" xml:space="preserve"><value>对方同意了悔棋</value></data>
+  <data name="NetUndoDenied" xml:space="preserve"><value>对方拒绝了悔棋</value></data>
+  <data name="CRestartTitle" xml:space="preserve"><value>重新开始</value></data>
+  <data name="CRestartMsg" xml:space="preserve"><value>{0} 请求重新开局，是否同意？</value></data>
+  <data name="NetRestartDenied" xml:space="preserve"><value>对方拒绝了重新开始</value></data>
+  <data name="StTitle" xml:space="preserve"><value>设置</value></data>
+  <data name="StDone" xml:space="preserve"><value>完成</value></data>
+  <data name="StAppearance" xml:space="preserve"><value>外观主题</value></data>
+  <data name="StThemeHint" xml:space="preserve"><value>切换后窗口标题栏、Mica 材质与棋盘配色同步变化。</value></data>
+  <data name="StPrefs" xml:space="preserve"><value>偏好</value></data>
+  <data name="StName" xml:space="preserve"><value>玩家昵称（联机时向对方显示）</value></data>
+  <data name="StHint" xml:space="preserve"><value>启用提示功能</value></data>
+  <data name="StHintSub" xml:space="preserve"><value>关闭后「提示」按钮将不可用</value></data>
+  <data name="StLang" xml:space="preserve"><value>语言</value></data>
+  <data name="StLangSub" xml:space="preserve"><value>界面语言：切换后立即生效，无需重启。默认跟随系统。</value></data>
+  <data name="StKeys" xml:space="preserve"><value>键盘快捷键</value></data>
+  <data name="StReset" xml:space="preserve"><value>恢复默认</value></data>
+  <data name="StCaptureHint" xml:space="preserve"><value>点击「修改」后按下新按键即可绑定（Esc 取消）</value></data>
+  <data name="StAbout" xml:space="preserve"><value>关于</value></data>
+  <data name="StAboutLine" xml:space="preserve"><value>基于 WinUI 3 / Windows App SDK 构建，遵循 Windows 11 设计语言。</value></data>
+  <data name="StFeatures" xml:space="preserve"><value>支持双人对弈、五档难度人机对弈、局域网联机对弈、悔棋、提示、键位自定义、多语言与明暗主题。</value></data>
+  <data name="LangSystem" xml:space="preserve"><value>跟随系统</value></data>
+  <data name="KeyMoveUp" xml:space="preserve"><value>光标上移</value></data>
+  <data name="KeyMoveDown" xml:space="preserve"><value>光标下移</value></data>
+  <data name="KeyMoveLeft" xml:space="preserve"><value>光标左移</value></data>
+  <data name="KeyMoveRight" xml:space="preserve"><value>光标右移</value></data>
+  <data name="KeyPlaceStone" xml:space="preserve"><value>落子</value></data>
+  <data name="KeyUndo" xml:space="preserve"><value>悔棋</value></data>
+  <data name="KeyHint" xml:space="preserve"><value>提示</value></data>
+  <data name="KeyNewGame" xml:space="preserve"><value>新开局</value></data>
+  <data name="KeyTheme" xml:space="preserve"><value>切换主题</value></data>
+  <data name="KeySettings" xml:space="preserve"><value>打开设置</value></data>
+  <data name="StUnbound" xml:space="preserve"><value>（未绑定）</value></data>
+  <data name="StModify" xml:space="preserve"><value>修改</value></data>
+  <data name="StCapturing" xml:space="preserve"><value>按新按键…（Esc 取消）</value></data>
+  <data name="StCaptureStart" xml:space="preserve"><value>正在绑定「{0}」：请按下新的按键组合…</value></data>
+  <data name="StCanceled" xml:space="preserve"><value>已取消。点击「修改」后按下新按键即可绑定（Esc 取消）</value></data>
+  <data name="StBound" xml:space="preserve"><value>已绑定 {0} → {1}</value></data>
+  <data name="BoardKeyHint" xml:space="preserve"><value>方向键 / WASD 移动 · Enter / 空格 落子 · U 悔棋 · H 提示 · R 新开局 · T 主题</value></data>
+</root>

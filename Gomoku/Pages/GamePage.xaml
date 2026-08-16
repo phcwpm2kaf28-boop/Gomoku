@@ -1,0 +1,245 @@
+<Page
+    x:Class="Gomoku.Pages.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Gomoku.Controls"
+    xmlns:pages="using:Gomoku.Pages">
+
+    <Page.Resources>
+        <!-- 工具栏标签样式：仅文字+图标；空闲时无任何背景遮罩，
+             只有鼠标悬停 / 按下时才出现圆角遮罩（自定义模板，Normal 态透明） -->
+        <Style x:Key="ToolbarLabelStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="10,6" />
+            <Setter Property="MinHeight" Value="36" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter x:Name="Root"
+                                          Background="{TemplateBinding Background}"
+                                          CornerRadius="{TemplateBinding CornerRadius}"
+                                          Padding="{TemplateBinding Padding}"
+                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Content="{TemplateBinding Content}">
+                            <ContentPresenter.RenderTransform>
+                                <ScaleTransform x:Name="ContentScale" ScaleX="1" ScaleY="1" />
+                            </ContentPresenter.RenderTransform>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="PointerOver">
+                                        <VisualState.Setters>
+                                            <Setter Target="Root.Background" Value="{ThemeResource SubtleFillColorSecondaryBrush}" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Target="Root.Background" Value="{ThemeResource SubtleFillColorTertiaryBrush}" />
+                                            <Setter Target="ContentScale.ScaleX" Value="0.96" />
+                                            <Setter Target="ContentScale.ScaleY" Value="0.96" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <VisualState.Setters>
+                                            <Setter Target="Root.Opacity" Value="0.4" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </ContentPresenter>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Padding="16,0,16,14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- ===== 标题栏（系统应用风格：仅标题文字，右侧为窗口系统按钮） ===== -->
+        <Grid x:Name="TitleBarHost" x:FieldModifier="public" Height="32" Background="Transparent"
+              Padding="12,0,0,0">
+            <TextBlock Text="GOMOKU" FontSize="12" VerticalAlignment="Center" Opacity="0.6"
+                       Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+        </Grid>
+
+        <!-- ===== 工具栏（标签式：图标+文字横向并列；左侧模式/难度/执子/悔棋/提示，右侧设置·联机） ===== -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- 左侧标签组：模式 / 难度 / 执子 · 悔棋 / 提示 / 新开局 -->
+            <StackPanel Orientation="Horizontal" Spacing="2">
+                <Button x:Name="ModeButton" Style="{StaticResource ToolbarLabelStyle}">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE768;" FontSize="14" />
+                        <TextBlock x:Name="ModeText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="DifficultyButton" Style="{StaticResource ToolbarLabelStyle}">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE71B;" FontSize="14" />
+                        <TextBlock x:Name="DifficultyText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ColorButton" Style="{StaticResource ToolbarLabelStyle}">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <!-- 执子：光泽棋子（黑/白视主题而定），高光与 App 图标同风格 -->
+                        <Grid Width="16" Height="16" VerticalAlignment="Center">
+                            <Path Fill="{ThemeResource TextFillColorPrimaryBrush}">
+                                <Path.Data>
+                                    <EllipseGeometry Center="8,8" RadiusX="7" RadiusY="7" />
+                                </Path.Data>
+                            </Path>
+                            <Path Fill="{ThemeResource TextFillColorSecondaryBrush}" Margin="-2,-2,0,0">
+                                <Path.Data>
+                                    <EllipseGeometry Center="8,8" RadiusX="2.6" RadiusY="2.6" />
+                                </Path.Data>
+                            </Path>
+                        </Grid>
+                        <TextBlock x:Name="ColorText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="UndoButton" Style="{StaticResource ToolbarLabelStyle}" Click="OnUndoClick">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE7A7;" FontSize="14" />
+                        <TextBlock x:Name="UndoText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="HintButton" Style="{StaticResource ToolbarLabelStyle}" Click="OnHintClick">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE80B;" FontSize="14" />
+                        <TextBlock x:Name="HintText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="NewGameButton" Style="{StaticResource ToolbarLabelStyle}" Click="OnRestartClick">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE777;" FontSize="14" />
+                        <TextBlock x:Name="NewGameText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <!-- 右侧标签组：设置 · 联机（仅联机模式显示，位于设置右侧） -->
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="2">
+                <Button x:Name="SettingsButton" Style="{StaticResource ToolbarLabelStyle}" Click="OnSettingsClick">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE713;" FontSize="14" />
+                        <TextBlock x:Name="SettingsText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="OnlineButton" Style="{StaticResource ToolbarLabelStyle}" Click="OnOnlineClick"
+                        Visibility="Collapsed">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE716;" FontSize="14" />
+                        <TextBlock x:Name="OnlineText" FontSize="13" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <!-- ===== 棋盘区（居中，左右对称） ===== -->
+        <Grid Grid.Row="2">
+            <Viewbox x:Name="BoardHost" Stretch="Uniform"
+                     HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:BoardView x:Name="Board" Width="800" Height="800" />
+            </Viewbox>
+            <InfoBar x:Name="ToastBar" IsOpen="False" Severity="Informational" IsClosable="True"
+                     HorizontalAlignment="Center" VerticalAlignment="Top" MaxWidth="440" Margin="0,8,0,0" />
+        </Grid>
+
+        <!-- ===== 底部状态栏（居中对称：黑方 · 状态 · 白方） ===== -->
+        <Border Grid.Row="3" CornerRadius="12" Padding="18,6" Margin="0,10,0,0"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1"
+                HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid ColumnSpacing="14">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Ellipse x:Name="BlackStoneDot" Width="16" Height="16" VerticalAlignment="Center" />
+                    <TextBlock x:Name="BlackNameText" VerticalAlignment="Center" />
+                </StackPanel>
+                <TextBlock x:Name="StatusTitle" Grid.Column="1" VerticalAlignment="Center"
+                           Opacity="0.72" Margin="4,0" TextAlignment="Center" />
+                <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="8">
+                    <Ellipse x:Name="WhiteStoneDot" Width="16" Height="16" VerticalAlignment="Center" />
+                    <TextBlock x:Name="WhiteNameText" VerticalAlignment="Center" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- ===== 联机对话框（引导 + 昵称 + 选择对方玩家） ===== -->
+        <ContentDialog x:Name="NetworkDialog"
+                       IsPrimaryButtonEnabled="True" DefaultButton="Primary">
+            <StackPanel Width="440" Spacing="10">
+                <InfoBar x:Name="NetGuide" Severity="Informational" IsOpen="True" IsClosable="False" />
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="NetNameLabel" VerticalAlignment="Center" />
+                    <TextBox x:Name="NetNameBox" Grid.Column="1" TextChanged="OnNetNameChanged" />
+                </Grid>
+                <TextBlock x:Name="NetStatus" FontSize="13" Opacity="0.85" TextWrapping="Wrap" />
+                <Grid ColumnSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="HostButton" Grid.Column="0" Click="OnHostClick" />
+                    <Button x:Name="DiscoverButton" Grid.Column="1" Click="OnDiscoverClick" />
+                </Grid>
+                <TextBlock x:Name="NetPickText" FontSize="13" Opacity="0.75" />
+                <ListView x:Name="HostList" MaxHeight="150" SelectionMode="Single"
+                          SelectionChanged="OnHostListSelectionChanged"
+                          DoubleTapped="OnHostListDoubleTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnSpacing="10" Padding="0,2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <FontIcon Glyph="&#xE8F1;" FontSize="14" Opacity="0.7" VerticalAlignment="Center" />
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="{Binding Name}" FontWeight="SemiBold" />
+                                    <TextBlock Text="{Binding Ip}" FontSize="11" Opacity="0.6" />
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Grid ColumnSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="JoinIpBox" Grid.Column="0" />
+                    <Button x:Name="JoinButton" Grid.Column="1" Click="OnJoinClick" />
+                </Grid>
+                <Button x:Name="DisconnectButton" Click="OnDisconnectClick" Visibility="Collapsed" />
+                <InfoBar x:Name="NetHint" Severity="Warning" IsOpen="False" IsClosable="False" />
+            </StackPanel>
+        </ContentDialog>
+
+        <!-- ===== 设置对话框（主题 / 语言 / 键位 / 偏好） ===== -->
+        <pages:SettingsDialog x:Name="SettingsDialog" />
+    </Grid>
+</Page>

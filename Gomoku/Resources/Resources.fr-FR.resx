@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="LblMode" xml:space="preserve"><value>Mode</value></data>
+  <data name="LblDifficulty" xml:space="preserve"><value>Difficulté</value></data>
+  <data name="LblColor" xml:space="preserve"><value>Pierres</value></data>
+  <data name="LblUndo" xml:space="preserve"><value>Annuler</value></data>
+  <data name="LblHint" xml:space="preserve"><value>Indice</value></data>
+  <data name="LblNewGame" xml:space="preserve"><value>Nouvelle partie</value></data>
+  <data name="LblSettings" xml:space="preserve"><value>Paramètres</value></data>
+  <data name="LblOnline" xml:space="preserve"><value>En ligne</value></data>
+  <data name="TipMode" xml:space="preserve"><value>Mode : 2 joueurs / IA / En ligne</value></data>
+  <data name="TipDifficulty" xml:space="preserve"><value>Difficulté de l'IA : Facile / Normal / Difficile / Expert / Maître</value></data>
+  <data name="TipColor" xml:space="preserve"><value>Jouer noir en premier ou blanc en second</value></data>
+  <data name="TipUndo" xml:space="preserve"><value>Annuler le dernier coup (U)</value></data>
+  <data name="TipHint" xml:space="preserve"><value>Afficher un coup suggéré (H)</value></data>
+  <data name="TipNewGame" xml:space="preserve"><value>Nouvelle partie : recommencer (R)</value></data>
+  <data name="TipSettings" xml:space="preserve"><value>Thème, langue, touches et préférences</value></data>
+  <data name="TipOnline" xml:space="preserve"><value>Jouer en ligne sur le réseau local</value></data>
+  <data name="Mode0" xml:space="preserve"><value>Mode 2 joueurs</value></data>
+  <data name="Mode1" xml:space="preserve"><value>Mode contre IA</value></data>
+  <data name="Mode2" xml:space="preserve"><value>Mode en ligne</value></data>
+  <data name="ModeLabel0" xml:space="preserve"><value>2J</value></data>
+  <data name="ModeLabel1" xml:space="preserve"><value>IA</value></data>
+  <data name="ModeLabel2" xml:space="preserve"><value>Ligne</value></data>
+  <data name="Diff0" xml:space="preserve"><value>Facile</value></data>
+  <data name="Diff1" xml:space="preserve"><value>Normal</value></data>
+  <data name="Diff2" xml:space="preserve"><value>Difficile</value></data>
+  <data name="Diff3" xml:space="preserve"><value>Expert</value></data>
+  <data name="Diff4" xml:space="preserve"><value>Maître</value></data>
+  <data name="Color0" xml:space="preserve"><value>Noir d'abord</value></data>
+  <data name="Color1" xml:space="preserve"><value>Blanc ensuite</value></data>
+  <data name="ColorLabelBlack" xml:space="preserve"><value>Noir</value></data>
+  <data name="ColorLabelWhite" xml:space="preserve"><value>Blanc</value></data>
+  <data name="ThemeSystem" xml:space="preserve"><value>Système</value></data>
+  <data name="ThemeLight" xml:space="preserve"><value>Clair</value></data>
+  <data name="ThemeDark" xml:space="preserve"><value>Sombre</value></data>
+  <data name="StBlack" xml:space="preserve"><value>Noir</value></data>
+  <data name="StWhite" xml:space="preserve"><value>Blanc</value></data>
+  <data name="StPlayer" xml:space="preserve"><value>Vous ({0})</value></data>
+  <data name="StAi" xml:space="preserve"><value>Ordinateur ({0})</value></data>
+  <data name="StOpponent" xml:space="preserve"><value>Adversaire ({0})</value></data>
+  <data name="StWin" xml:space="preserve"><value>{0} gagne !</value></data>
+  <data name="StDraw" xml:space="preserve"><value>Égalité</value></data>
+  <data name="StWaitConn" xml:space="preserve"><value>En attente de connexion…</value></data>
+  <data name="StAiThink" xml:space="preserve"><value>L'ordinateur réfléchit…</value></data>
+  <data name="StYourTurn" xml:space="preserve"><value>À vous de jouer</value></data>
+  <data name="StWaitMove" xml:space="preserve"><value>En attente de l'adversaire…</value></data>
+  <data name="StToMove" xml:space="preserve"><value>À {0} de jouer</value></data>
+  <data name="StTurnN" xml:space="preserve"><value>Coup {0} · {1}</value></data>
+  <data name="Ok" xml:space="preserve"><value>OK</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Annuler</value></data>
+  <data name="CNewGame" xml:space="preserve"><value>Nouvelle partie</value></data>
+  <data name="CNewGameMsg" xml:space="preserve"><value>La partie en cours n'est pas terminée. Voulez-vous recommencer ?</value></data>
+  <data name="NetTitle" xml:space="preserve"><value>Jeu en ligne</value></data>
+  <data name="NetClose" xml:space="preserve"><value>Fermer</value></data>
+  <data name="NetGuideTitle" xml:space="preserve"><value>Avant de jouer en ligne</value></data>
+  <data name="NetGuideMsg" xml:space="preserve"><value>Les deux appareils doivent être sur le même Wi-Fi / réseau local. À la première utilisation, autorisez l'accès dans l'invite du pare-feu (TCP 45679 / UDP 45680). Si l'isolation AP est activée sur le routeur, rejoignez manuellement par IP.</value></data>
+  <data name="NetName" xml:space="preserve"><value>Votre nom</value></data>
+  <data name="NetHost" xml:space="preserve"><value>Créer une salle</value></data>
+  <data name="NetDiscover" xml:space="preserve"><value>Actualiser</value></data>
+  <data name="NetPick" xml:space="preserve"><value>Sélectionnez un adversaire (double-clic pour rejoindre)</value></data>
+  <data name="NetJoinIp" xml:space="preserve"><value>Adresse IP (connexion manuelle)</value></data>
+  <data name="NetJoin" xml:space="preserve"><value>Rejoindre</value></data>
+  <data name="NetDisconnect" xml:space="preserve"><value>Déconnecter</value></data>
+  <data name="NetNotOnline" xml:space="preserve"><value>Pas en mode en ligne : fermez cette fenêtre et choisissez « Mode en ligne » dans la barre d'outils.</value></data>
+  <data name="NetHosting" xml:space="preserve"><value>Salle créée, en attente d'un adversaire… (il peut vous trouver avec « Actualiser », ou communiquez votre IP)</value></data>
+  <data name="NetConnected" xml:space="preserve"><value>Connecté à {0} (l'hôte joue noir)</value></data>
+  <data name="NetIdle" xml:space="preserve"><value>Choisissez un adversaire dans la liste, ou entrez son IP manuellement.</value></data>
+  <data name="NetCreating" xml:space="preserve"><value>Création de la salle…</value></data>
+  <data name="NetCreateFail" xml:space="preserve"><value>Échec de la création de la salle (port occupé ?). Réessayez plus tard.</value></data>
+  <data name="NetSearching" xml:space="preserve"><value>Recherche de salles à proximité…</value></data>
+  <data name="NetNone" xml:space="preserve"><value>Aucune salle trouvée : vérifiez que l'hôte a cliqué sur « Créer une salle » et que les deux appareils sont sur le même réseau.</value></data>
+  <data name="NetFound" xml:space="preserve"><value>{0} joueur(s) trouvé(s). Double-cliquez pour rejoindre.</value></data>
+  <data name="NetNeedIp" xml:space="preserve"><value>Entrez d'abord une adresse IP, ou choisissez un joueur dans la liste.</value></data>
+  <data name="NetConnecting" xml:space="preserve"><value>Connexion à {0}…</value></data>
+  <data name="NetFail" xml:space="preserve"><value>Échec de la connexion : vérifiez l'IP, le réseau et le pare-feu</value></data>
+  <data name="NetToastConnected" xml:space="preserve"><value>Connecté à l'adversaire : {0}</value></data>
+  <data name="NetToastDisconnected" xml:space="preserve"><value>Déconnecté</value></data>
+  <data name="CUndoReqTitle" xml:space="preserve"><value>Demande d'annulation</value></data>
+  <data name="CUndoReqMsg" xml:space="preserve"><value>{0} demande une annulation. Accepter ?</value></data>
+  <data name="NetUndoAccepted" xml:space="preserve"><value>L'adversaire a accepté l'annulation</value></data>
+  <data name="NetUndoDenied" xml:space="preserve"><value>L'adversaire a refusé l'annulation</value></data>
+  <data name="CRestartTitle" xml:space="preserve"><value>Recommencer</value></data>
+  <data name="CRestartMsg" xml:space="preserve"><value>{0} demande une nouvelle partie. Accepter ?</value></data>
+  <data name="NetRestartDenied" xml:space="preserve"><value>L'adversaire a refusé de recommencer</value></data>
+  <data name="StTitle" xml:space="preserve"><value>Paramètres</value></data>
+  <data name="StDone" xml:space="preserve"><value>Terminé</value></data>
+  <data name="StAppearance" xml:space="preserve"><value>Apparence et thème</value></data>
+  <data name="StThemeHint" xml:space="preserve"><value>La barre de titre, le matériau Mica et les couleurs du plateau se mettent à jour immédiatement.</value></data>
+  <data name="StPrefs" xml:space="preserve"><value>Préférences</value></data>
+  <data name="StName" xml:space="preserve"><value>Nom du joueur (affiché à l'adversaire)</value></data>
+  <data name="StHint" xml:space="preserve"><value>Activer les indices</value></data>
+  <data name="StHintSub" xml:space="preserve"><value>Le bouton d'indice est désactivé si désactivé</value></data>
+  <data name="StLang" xml:space="preserve"><value>Langue</value></data>
+  <data name="StLangSub" xml:space="preserve"><value>Langue de l'interface : appliquée immédiatement, sans redémarrage. Par défaut : système.</value></data>
+  <data name="StKeys" xml:space="preserve"><value>Raccourcis clavier</value></data>
+  <data name="StReset" xml:space="preserve"><value>Réinitialiser</value></data>
+  <data name="StCaptureHint" xml:space="preserve"><value>Cliquez sur « Modifier », puis appuyez sur une nouvelle touche (Échap pour annuler)</value></data>
+  <data name="StAbout" xml:space="preserve"><value>À propos</value></data>
+  <data name="StAboutLine" xml:space="preserve"><value>Conçu avec WinUI 3 / Windows App SDK, selon le langage de conception Windows 11.</value></data>
+  <data name="StFeatures" xml:space="preserve"><value>Prend en charge 2 joueurs, IA à 5 niveaux, jeu en ligne LAN, annulation, indices, touches personnalisées, multilangue et thèmes clair/sombre.</value></data>
+  <data name="LangSystem" xml:space="preserve"><value>Système</value></data>
+  <data name="KeyMoveUp" xml:space="preserve"><value>Monter</value></data>
+  <data name="KeyMoveDown" xml:space="preserve"><value>Descendre</value></data>
+  <data name="KeyMoveLeft" xml:space="preserve"><value>Aller à gauche</value></data>
+  <data name="KeyMoveRight" xml:space="preserve"><value>Aller à droite</value></data>
+  <data name="KeyPlaceStone" xml:space="preserve"><value>Poser une pierre</value></data>
+  <data name="KeyUndo" xml:space="preserve"><value>Annuler</value></data>
+  <data name="KeyHint" xml:space="preserve"><value>Indice</value></data>
+  <data name="KeyNewGame" xml:space="preserve"><value>Nouvelle partie</value></data>
+  <data name="KeyTheme" xml:space="preserve"><value>Changer de thème</value></data>
+  <data name="KeySettings" xml:space="preserve"><value>Ouvrir les paramètres</value></data>
+  <data name="StUnbound" xml:space="preserve"><value>(non attribué)</value></data>
+  <data name="StModify" xml:space="preserve"><value>Modifier</value></data>
+  <data name="StCapturing" xml:space="preserve"><value>Appuyez sur une nouvelle touche… (Échap pour annuler)</value></data>
+  <data name="StCaptureStart" xml:space="preserve"><value>Liaison de {0} : appuyez sur la nouvelle touche…</value></data>
+  <data name="StCanceled" xml:space="preserve"><value>Annulé. Cliquez sur « Modifier » puis appuyez sur une nouvelle touche (Échap pour annuler)</value></data>
+  <data name="StBound" xml:space="preserve"><value>{0} lié → {1}</value></data>
+  <data name="BoardKeyHint" xml:space="preserve"><value>Flèches / WASD pour bouger · Entrée / Espace pour poser · U annuler · H indice · R nouvelle partie · T thème</value></data>
+</root>
