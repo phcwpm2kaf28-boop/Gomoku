@@ -343,23 +343,39 @@ public sealed partial class GamePage : Page
 
     // ---------- 提示与确认 ----------
 
+    private bool _confirmBusy;
+
+    /// <summary>
+    /// 联机确认框（新开局 / 悔棋）。同一时刻只允许一个确认框：
+    /// 对方确认框还开着时再收到请求（如连点新开局），直接返回 false 拒绝，
+    /// 避免两个 ContentDialog 同时打开导致 WinUI 崩溃闪退（0xc000027b）。
+    /// </summary>
     private async Task<bool> ConfirmAsync(string title, string message)
     {
-        var tcs = new TaskCompletionSource<bool>();
-        DispatcherQueue.TryEnqueue(async () =>
+        if (_confirmBusy) return false;   // 已有确认框在等：忽略重复请求
+        _confirmBusy = true;
+        try
         {
-            var dialog = new ContentDialog
+            var tcs = new TaskCompletionSource<bool>();
+            DispatcherQueue.TryEnqueue(async () =>
             {
-                Title = title,
-                Content = message,
-                PrimaryButtonText = L.T("Ok"),
-                CloseButtonText = L.T("Cancel"),
-                XamlRoot = XamlRoot,
-                DefaultButton = ContentDialogButton.Primary,
-            };
-            tcs.SetResult(await dialog.ShowAsync() == ContentDialogResult.Primary);
-        });
-        return await tcs.Task;
+                var dialog = new ContentDialog
+                {
+                    Title = title,
+                    Content = message,
+                    PrimaryButtonText = L.T("Ok"),
+                    CloseButtonText = L.T("Cancel"),
+                    XamlRoot = XamlRoot,
+                    DefaultButton = ContentDialogButton.Primary,
+                };
+                tcs.SetResult(await dialog.ShowAsync() == ContentDialogResult.Primary);
+            });
+            return await tcs.Task;
+        }
+        finally
+        {
+            _confirmBusy = false;
+        }
     }
 
     private void ShowToast(string message)

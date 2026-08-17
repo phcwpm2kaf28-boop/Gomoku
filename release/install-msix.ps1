@@ -14,7 +14,7 @@
 $ErrorActionPreference = 'Stop'
 
 $dir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$msix = Join-Path $dir 'Gomoku_1.0.0.0_x64.msix'
+$msix = Join-Path $dir 'Gomoku_1.1.0.0_x64.msix'
 $cer  = Join-Path $dir 'Gomoku.cer'
 
 if (-not (Test-Path $msix)) { Write-Host "[错误] 找不到 $msix"; Read-Host '按回车退出'; exit 1 }

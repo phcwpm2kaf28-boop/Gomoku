@@ -25,13 +25,13 @@ Mica 材质背景、圆角卡片、明暗主题、触摸 / 键盘 / 鼠标全支
 
 ### 方式一：MSIX 安装包（推荐）
 
-文件：`Gomoku_1.0.0.0_x64.msix` + `Gomoku.cer` + `install-msix.ps1` + `安装五子棋.bat`
+文件：`Gomoku_1.1.0.0_x64.msix` + `Gomoku.cer` + `install-msix.ps1` + `安装五子棋.bat`
 （GitHub Release 中该脚本名为 `install-gomoku.bat`，内容与本地一致）
 
 1. **双击 `安装五子棋.bat`** 即可自动完成全部安装（自动请求 UAC 提权 → 导入证书到本机受信任根 → 安装应用）；
 2. 或右键 `install-msix.ps1` → **使用 PowerShell 运行**（注意：`.ps1` 双击默认不运行，这是 Windows 安全策略，属正常现象）；
 3. 或手动操作：右键 `Gomoku.cer` → 安装证书 → **本地计算机** → 受信任的根证书颁发机构（需管理员）；
-   然后双击 `Gomoku_1.0.0.0_x64.msix` 完成安装；
+   然后双击 `Gomoku_1.1.0.0_x64.msix` 完成安装；
 4. 安装后在开始菜单搜索 **五子棋** 启动。
 
 > ⚠️ **证书必须导入"本机"受信任根（LocalMachine\Root）**：Add-AppxPackage 的签名校验由
@@ -99,7 +99,7 @@ dotnet publish Gomoku/Gomoku.csproj -c Release -r win-x64 --self-contained true 
 dotnet build Gomoku/Gomoku.csproj -c Release -r win-x64 -p:AppxPackage=true
 
 # 4. 签名（自签名证书 Gomoku.pfx，密码见 tools 说明）
-signtool sign /f release/Gomoku.pfx /p <密码> /fd SHA256 Gomoku_1.0.0.0_x64.msix
+signtool sign /f release/Gomoku.pfx /p <密码> /fd SHA256 Gomoku_1.1.0.0_x64.msix
 ```
 
 图标生成脚本：`tools/make-icon.ps1`（PowerShell 5.1 + System.Drawing）。

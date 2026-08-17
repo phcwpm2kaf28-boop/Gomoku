@@ -49,7 +49,8 @@ public class NetSession : IDisposable
     private StreamReader? _reader;
     private StreamWriter? _writer;
     private readonly object _writeLock = new();
-    private readonly CancellationTokenSource _cts = new();
+    private readonly CancellationTokenSource _cts = new();            // 会话/接收循环
+    private readonly CancellationTokenSource _discoveryCts = new();  // 仅房间广播
     private string _myName = "";
     private bool _closedRaised;
 
@@ -74,7 +75,7 @@ public class NetSession : IDisposable
             await SendHelloAsync(_myName, ct);                // 再回发自己
             OpponentName = hello.Name;
             MyColor = StoneColor.Black;
-            _cts.Cancel();                                    // 停止房间广播
+            _discoveryCts.Cancel();                           // 停止房间广播
             Connected?.Invoke(OpponentName, MyColor);
             _ = ReceiveLoopAsync();
         }
@@ -211,21 +212,24 @@ public class NetSession : IDisposable
     // ---------- 房间发现 ----------
 
     /// <summary>主机在等待对手期间监听 UDP 探活并回复，客户端据此列出房间。</summary>
+    /// <remarks>必须全程真正异步：async 方法在首个 await 之前是同步执行的，
+    /// 若用阻塞式 Receive 会把调用线程（创建房间时的 UI 线程）卡死，
+    /// 导致"建房即假死、但对方仍能搜到房间"。ReceiveAsync 可随取消立即解除等待。</remarks>
     private async Task DiscoveryListenLoopAsync()
     {
         try
         {
             using var udp = new UdpClient(DiscoveryPort);
             var reply = Encoding.UTF8.GetBytes($"GOMOKU|{_myName}|");
-            while (!_cts.IsCancellationRequested && _client == null)
+            while (!_discoveryCts.IsCancellationRequested && _client == null)
             {
                 try
                 {
-                    var ep = new IPEndPoint(IPAddress.Any, 0);
-                    var buf = udp.Receive(ref ep);
-                    if (Encoding.UTF8.GetString(buf).StartsWith("GOMOKU_PROBE", StringComparison.Ordinal))
-                        await udp.SendAsync(reply, reply.Length, ep);
+                    var result = await udp.ReceiveAsync(_discoveryCts.Token);
+                    if (Encoding.UTF8.GetString(result.Buffer).StartsWith("GOMOKU_PROBE", StringComparison.Ordinal))
+                        await udp.SendAsync(reply, reply.Length, result.RemoteEndPoint);
                 }
+                catch (OperationCanceledException) { break; }
                 catch (SocketException) { /* 超时继续 */ }
                 catch (ObjectDisposedException) { break; }
             }
@@ -282,6 +286,7 @@ public class NetSession : IDisposable
         if (_closedRaised && Role == NetRole.None) return;
         _closedRaised = true;
         _cts.Cancel();
+        _discoveryCts.Cancel();
         try { _writer?.WriteLine(JsonSerializer.Serialize(new { t = "bye" })); } catch { }
         try { _client?.Close(); } catch { }
         try { _listener?.Stop(); } catch { }

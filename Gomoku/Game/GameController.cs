@@ -101,11 +101,13 @@ public class GameController
         return true;
     }
 
-    private void DoPlace(int col, int row)
+    private void DoPlace(int col, int row, bool fromNet = false)
     {
         var color = Core.NextToMove;
         if (!Core.TryPlace(col, row, color, out var rec)) return;
         MovePlaced?.Invoke(rec);
+        // 联机：本地落子发送给对方；收到的落子（fromNet）不回发，避免消息回环
+        if (Mode == GameMode.Online && !fromNet) Session?.SendMove(col, row);
 
         if (Core.CheckWinAtLast(out var line))
         {
@@ -226,7 +228,7 @@ public class GameController
 
         session.MoveReceived += (x, y) => Dispatch(() =>
         {
-            if (!GameOver && Core.IsEmpty(x, y)) DoPlace(x, y);
+            if (!GameOver && Core.IsEmpty(x, y)) DoPlace(x, y, fromNet: true);
         });
 
         session.UndoRequested += () => Dispatch(async () =>
